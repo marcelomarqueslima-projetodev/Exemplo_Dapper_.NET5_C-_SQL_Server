@@ -1,4 +1,5 @@
 ﻿using System;
+using Microsoft.Data.SqlClient;
 
 namespace DataAccess
 {
@@ -6,7 +7,8 @@ namespace DataAccess
     {
         static void Main(string[] args)
         {
-            const string connectionsString = "server=DESKTOP-297NQ9F\\SQLEXPRESS;Database=Blog; User ID=sa;Password=mar15l82";
+            const string connectionsString = 
+                "server=DESKTOP-297NQ9F\\SQLEXPRESS;Database=Blog; User ID=sa;Password=mar15l82";
             Console.WriteLine("Hello World!");
         }
     }
