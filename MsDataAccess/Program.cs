@@ -9,10 +9,10 @@ namespace MsDataAccess
         {
             const string connectionString = "Server=DESKTOP-297NQ9F\\SQLEXPRESS;Database=Blog;User ID=sa;Password=mar15l82";
 
-            var connection = new SqlConnection();
-
-            connection.Open();
-            connection.Close();
+            using (var connection = new SqlConnection(connectionString))
+            {
+                Console.WriteLine("Conectado");
+            };
 
             Console.WriteLine("Hello World!");
         }
